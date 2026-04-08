@@ -19,10 +19,6 @@ body {
 * {
   box-sizing: border-box;
 }
-  display: inline-flex;
-  border-radius: 4px;
-  color: var(--text-h);
-}
 
 code {
   font-size: 15px;
@@ -30,4 +26,3 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
->>>>>>> 1ffc6965e84aef8f23c22371f5e528b5869db7d9
