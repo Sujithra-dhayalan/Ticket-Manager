@@ -77,6 +77,8 @@ TransFi assessment/
 - 📱 **Responsive Design** - Works seamlessly on desktop and mobile
 - ⚡ **Smooth Transitions** - Professional animations and interactions
 - 🔔 **Auto-dismissing Alerts** - Notifications auto-close after 4 seconds
+<img width="1896" height="971" alt="image" src="https://github.com/user-attachments/assets/40134193-ba31-4a50-b458-05b2cd09a77c" />
+
 
 ## 📋 API Endpoints
 
