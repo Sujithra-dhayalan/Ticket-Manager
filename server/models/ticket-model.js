@@ -35,10 +35,6 @@ const ticketSchema = new mongoose.Schema(
       },
       default: 'NEW',
       index: true,
-    },
-    assignedTo: {
-      type: String,
-      default: null,
     }
   },
   {
