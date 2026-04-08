@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 mongoose.set("strictQuery", false);
 exports.db = () => {
     mongoose
-        .connect(process.env.MONGO_URI)
+        .connect(process.env.MONGODB_URI)
         .then(() => {
             console.log("Connection Established");
         })
