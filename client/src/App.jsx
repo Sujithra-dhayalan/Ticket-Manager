@@ -5,8 +5,10 @@ import TicketList from './components/TicketList'
 import Notification from './components/Notification'
 import './App.css'
 
+// base URL for API calls, set in .env file as VITE_BASE_URL
 const API_BASE = import.meta.env.VITE_BASE_URL
 
+// main App component that manages state and API interactions for tickets, and renders form, list and notifications
 function App() {
   const [tickets, setTickets] = useState([])
   const [loading, setLoading] = useState(false)
@@ -19,12 +21,12 @@ function App() {
     fetchTickets()
   }, [])
 
+  // function to fetch all tickets from the server and update state
   const fetchTickets = async () => {
     try {
       setLoading(true);
 
       const res = await axios.get(`${API_BASE}/tickets`);
-      console.log("🫂🫂🫂", res);
       setTickets(res.data.data);
 
     } catch (error) {
@@ -34,6 +36,7 @@ function App() {
     }
   };
 
+  // function to handle form submission for creating a new ticket. 
   const handleCreateTicket = async (formData) => {
     try {
       const res = await axios.post(`${API_BASE}/tickets`, formData);
@@ -56,6 +59,7 @@ function App() {
     }
   };
 
+  // function to handle status change of a ticket.
   const handleStatusChange = async (id, newStatus) => {
     try {
       const res = await axios.patch(`${API_BASE}/tickets/${id}`, {
