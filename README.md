@@ -69,7 +69,6 @@ TransFi assessment/
 - ✅ **View Tickets** - Display all tickets in an organized list
 - ✅ **Update Status** - Change ticket status with one click (NEW → INVESTIGATING → RESOLVED)
 - ✅ **Duplicate Detection** - Prevent duplicate tickets with smart validation
-- ✅ **Real-time Notifications** - Toast notifications for success/error messages
 
 ### UI/UX Features
 - 🎨 **Color-Coded Status** - Visual indicators for ticket status
